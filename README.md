@@ -1,11 +1,11 @@
 # Botshot-Roulette
 
-This is a decision tree builder for the game "Buckshot Roulette". Ideally, this classifier will help the user decide what action to take on their turn (shoot self/shoot dealer/use item)
+This is a decision tree builder for the game "Buckshot Roulette" by Mike Klubnika. Ideally, this classifier will help the user decide what action to take on their turn (shoot self/shoot dealer/use item)
 The rules for the game are as follows:
 
 ## Game Rules
 
-* There are two rational actors: the "player" (that which we control) and the "dealer" (our opponent). Each has a certain amount of "charges" (i.e. when one is shot, they lose a charge)
+* There are two [rational actors](#what-is-a-rational-actor): the "player" (that which we control) and the "dealer" (our opponent). Each has a certain amount of "charges" (i.e. when one is shot, they lose a charge)
 * Between them rests a shotgun, which is loaded with between 4 and 8 shells in a random order, some of which are live and others are blank. Both players know the total number of shells, as well as the total numbers of blank and live rounds; what they do not know is the order in which they are loaded.
 * Players alternate turns in control of the gun; they may either:
   * Shoot themself: should the bullet be a blank, they get another turn;
@@ -33,3 +33,12 @@ The rules for the game are as follows:
 
 ## Goal of the Project:
 Create a tool to optimize play to maximize chance of victory.
+
+### What is a "rational actor"?
+   
+   A rational actor is a player that is attempting to play the game optimally. Generally, this means that we assume that in the absence of items
+   
+   * Any player in control of the gun will shoot the opponent when there is a 50% chance or higher of a live round.
+   * Any player in control of the gun will shoot themselves when there is less than a 50% chance of a blank.
+   
+   This definition may change (i.e. incorporate the scoring function) in later portions of the project.
