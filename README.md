@@ -36,9 +36,9 @@ Create a tool to optimize play to maximize chance of victory.
 
 ### What is a "rational actor"?
    
-   A rational actor is a player that is attempting to play the game optimally. Generally, this means that we assume that in the absence of items
+   A rational actor is a player that is attempting to play the game optimally. Generally, this means that we assume that in the absence of items:
    
    * Any player in control of the gun will shoot the opponent when there is a 50% chance or higher of a live round.
-   * Any player in control of the gun will shoot themselves when there is less than a 50% chance of a blank.
+   * Any player in control of the gun will shoot themselves when there is less than a 50% chance of a live round.
    
    This definition may change (i.e. incorporate the scoring function) in later portions of the project.
