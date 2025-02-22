@@ -42,3 +42,6 @@ Create a tool to optimize play to maximize chance of victory.
    * Any player in control of the gun will shoot themselves when there is less than a 50% chance of a live round.
    
    This definition may change (i.e. incorporate the scoring function) in later portions of the project.
+
+   **Note as of 2/21:**
+   There are situations where the above definition does not mean optimal play. For example, if the player has control of the gun with 3 bullets left, it is always optimal to shoot the opponent, regardless of how many of the remaining bullets are live.
